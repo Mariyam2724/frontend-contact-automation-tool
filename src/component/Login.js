@@ -17,7 +17,7 @@ const Login = () => {
 
     // fetch - url,request method, data, data format
 
-    const res = await fetch("http://localhost:5000/user/authenticate", {
+    const res = await fetch("https://contacts-automation-api.herokuapp.com/user/authenticate", {
       method: "POST",
       body: JSON.stringify(formdata),
       headers: {

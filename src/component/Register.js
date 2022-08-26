@@ -21,7 +21,8 @@ const Register = () => {
 
     // await will execute this function synchronously
 
-    const response = await fetch("http://localhost:5000/user/add", {
+    // const response = await fetch("http://localhost:5000/user/add", {
+    const response = await fetch("https://contacts-automation-api.herokuapp.com/user/add", {
       method: "POST",
       body: JSON.stringify(formdata),
       headers: {

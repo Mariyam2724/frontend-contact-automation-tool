@@ -4,7 +4,8 @@ import { Link, useNavigate } from "react-router-dom"
 import "./sheetHandler.css"
 
 const SheetHandler = () => {
-  const url = "http://localhost:5000"
+  // const url = "http://localhost:5000";
+  const url = "https://contacts-automation-api.herokuapp.com";
 
   const [sheetData, setSheetData] = useState([])
   const [dataToStore, setDataToStore] = useState({})

@@ -13,7 +13,8 @@ const MailSender = () => {
     JSON.parse(sessionStorage.getItem("user"))
   );
 
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
+  const url = "https://contacts-automation-api.herokuapp.com";
 
   const showData = () => {
     return <table className="table align-middle mb-0 bg-white">
@@ -66,7 +67,8 @@ const MailSender = () => {
   };
 
   const sendMail = async (recAddress) => {
-    const res = await fetch("http://localhost:5000/util/sendmail", {
+    // const res = await fetch("http://localhost:5000/util/sendmail", {
+    const res = await fetch("https://contacts-automation-api.herokuapp.com/util/sendmail", {
       method: "POST",
       body: JSON.stringify({
         from: "mt272422@gmail.com", // sender address

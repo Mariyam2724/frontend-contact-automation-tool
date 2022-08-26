@@ -7,7 +7,8 @@ import {Swal} from 'sweetalert2';
 const AddContact = () => {
   const CLIENT_ID = "436370605107-a1a87949khjquees4o8m7cjeq3mpiu8b.apps.googleusercontent.com"
   const API_KEY = "AIzaSyAzn3wRxPV_2kiXaRFkE480vDCEoiq1Nak"
-  const url = "http://localhost:5000"
+  // const url = "http://localhost:5000";
+  const url = "https://contacts-automation-api.herokuapp.com";
 
   const [contactsToAdd, setContactsToAdd] = useState([]);
   const [fieldsToAdd, setFieldsToAdd] = useState({});

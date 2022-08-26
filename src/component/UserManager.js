@@ -13,7 +13,8 @@ const UserManager = () => {
   const getDataFromBackend = async () => {
     setLoading(true);
 
-    const response = await fetch("http://localhost:5000/user/getall");
+    // const response = await fetch("http://localhost:5000/user/getall");
+    const response = await fetch("https://contacts-automation-api.herokuapp.com/user/getall");
     const data = await response.json();
 
     console.log(data);
@@ -29,7 +30,8 @@ const UserManager = () => {
 
   const deleteUser = async (id) => {
     console.log(id);
-    const response = await fetch("http://localhost:5000/user/delete/" + id, {
+    // const response = await fetch("http://localhost:5000/user/delete/" + id, {
+    const response = await fetch("https://contacts-automation-api.herokuapp.com/user/delete/" + id, {
       method: "DELETE",
     });
 
